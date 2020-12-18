@@ -12,6 +12,7 @@
 		556A41D825842B8800C56516 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 556A41D725842B8800C56516 /* Preview Assets.xcassets */; };
 		556A41E125842BDA00C56516 /* Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556A41E025842BDA00C56516 /* Framework.swift */; };
 		556A41E525842D7800C56516 /* FrameworkGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556A41E425842D7800C56516 /* FrameworkGridView.swift */; };
+		55942619258C147A0037D5DC /* FrameworkGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55942618258C147A0037D5DC /* FrameworkGridViewModel.swift */; };
 		55F90578258ABD360010AFD6 /* FrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F90577258ABD360010AFD6 /* FrameworkDetailView.swift */; };
 		55F9057B258AC13A0010AFD6 /* AFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F9057A258AC13A0010AFD6 /* AFButton.swift */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,7 @@
 		556A41D925842B8800C56516 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		556A41E025842BDA00C56516 /* Framework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framework.swift; sourceTree = "<group>"; };
 		556A41E425842D7800C56516 /* FrameworkGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridView.swift; sourceTree = "<group>"; };
+		55942618258C147A0037D5DC /* FrameworkGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridViewModel.swift; sourceTree = "<group>"; };
 		55F90577258ABD360010AFD6 /* FrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailView.swift; sourceTree = "<group>"; };
 		55F9057A258AC13A0010AFD6 /* AFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,6 +63,7 @@
 				556A41D025842B8700C56516 /* AppleFrameworksApp.swift */,
 				556A41E025842BDA00C56516 /* Framework.swift */,
 				556A41E425842D7800C56516 /* FrameworkGridView.swift */,
+				55942618258C147A0037D5DC /* FrameworkGridViewModel.swift */,
 				55F90577258ABD360010AFD6 /* FrameworkDetailView.swift */,
 				55F9057A258AC13A0010AFD6 /* AFButton.swift */,
 				556A41D425842B8800C56516 /* Assets.xcassets */,
@@ -152,6 +155,7 @@
 				556A41E125842BDA00C56516 /* Framework.swift in Sources */,
 				55F9057B258AC13A0010AFD6 /* AFButton.swift in Sources */,
 				556A41D125842B8700C56516 /* AppleFrameworksApp.swift in Sources */,
+				55942619258C147A0037D5DC /* FrameworkGridViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

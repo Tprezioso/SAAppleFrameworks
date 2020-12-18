@@ -9,10 +9,10 @@ import SwiftUI
 
 struct AFButton: View {
     var title: String
+    var url: URL
     var body: some View {
-        Text(title)
+        Link(title, destination: url)
             .font(.title2)
-            .fontWeight(.semibold)
             .frame(width: 280, height: 50)
             .background(Color.red)
             .foregroundColor(.white)
@@ -20,8 +20,8 @@ struct AFButton: View {
     }
 }
 
-struct AFButton_Previews: PreviewProvider {
-    static var previews: some View {
-        AFButton(title: "Learn More")
-    }
-}
+//struct AFButton_Previews: PreviewProvider {
+//    static var previews: some View {
+//        AFButton(title: "Learn More")
+//    }
+//}
