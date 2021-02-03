@@ -24,7 +24,7 @@ struct FrameworkGridView: View {
                 }
             }.navigationTitle("🍎 Frameworks")
             .sheet(isPresented: $viewmodel.isShowingDetailView) {
-                FrameworkDetailView(framework: viewmodel.selectedFramework ?? MockData.sampleFramework, isShowingDetailView: $viewmodel.isShowingDetailView)
+                FrameworkDetailView(viewModel: FrameworkDetailViewModel(framework: viewmodel.selectedFramework!, isShowingDetailView: $viewmodel.isShowingDetailView))
             // instead of using mockdata above we could make a empty state view to show here as the nil coalescing
             }
         }

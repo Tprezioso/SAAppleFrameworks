@@ -8,21 +8,20 @@
 import SwiftUI
 
 struct FrameworkDetailView: View {
-    var framework: Framework
-    @Binding var isShowingDetailView: Bool
+    @ObservedObject var viewModel: FrameworkDetailViewModel
     
     var body: some View {
         VStack {
-            DismissButton(isShowingDetailView: $isShowingDetailView)
-            FrameworkTitleView(framework: framework)
+            DismissButton(isShowingDetailView: $viewModel.isShowingDetailView.wrappedValue)
+            FrameworkTitleView(framework: viewModel.framework)
             ScrollView {
-                Text(framework.description)
+                Text(viewModel.framework.description)
                     .font(.body)
                     .padding()
             }
             
             Spacer()
-            AFButton(title: "Learn More", url: URL(string: framework.urlString)!)
+            AFButton(title: "Learn More", url: URL(string: viewModel.framework.urlString)!)
             Spacer()
         }
     }
@@ -30,7 +29,8 @@ struct FrameworkDetailView: View {
 
 struct FrameworkDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        FrameworkDetailView(framework: MockData.sampleFramework, isShowingDetailView: .constant(false))
+        FrameworkDetailView(viewModel: FrameworkDetailViewModel(framework: MockData.sampleFramework,
+                                                                isShowingDetailView: .constant(false)))
             .preferredColorScheme(.dark)
     }
 }
